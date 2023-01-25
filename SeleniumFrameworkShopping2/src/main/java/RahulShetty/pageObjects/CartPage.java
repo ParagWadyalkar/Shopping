@@ -19,7 +19,7 @@ public class CartPage extends AbstractComponenet {
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-
+//test
 	}
 
 	@FindBy(css = ".cartSection h3")
