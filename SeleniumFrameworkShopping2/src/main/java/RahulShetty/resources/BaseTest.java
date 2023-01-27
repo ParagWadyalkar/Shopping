@@ -41,8 +41,8 @@ public class BaseTest {
 
 		if (brow.equalsIgnoreCase("chrome")) {
 			ChromeOptions option = new ChromeOptions();
-			WebDriverManager.chromedriver().setup();
-			option.addArguments("headless");
+			System.setProperty("webdriver.chrome.driver", "D:\\edg\\chromedriver_win32\\chromedriver.exe");
+			option.addArguments("headless");	
 			if(brow.contains("headless")) {
 			driver = new ChromeDriver(option);
 			driver.manage().window().setSize(new Dimension(1440,900));
